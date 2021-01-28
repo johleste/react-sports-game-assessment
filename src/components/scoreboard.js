@@ -1,6 +1,9 @@
 import React  from 'react';
 import Team from './team'
 import Game from './game'
+import Dodgers from "./assets/images/Dodgers.jpg"
+import Spurs from "./assets/images/spurs.png"
+
 
 
 function Scoreboard(props) {
@@ -15,12 +18,12 @@ function Scoreboard(props) {
         <div className="App" >
           <Team
             name="Dodgers"
-            img="./assets/images/dodgers.jpg" score="0"
+            img= {Dodgers} score="0"
           />
           <div className="App">
             <Team
               name="Spurs"
-              img="./assets/images/spurs.jpg" score="0"
+              img={Spurs} score="0"
             />
 
           </div>

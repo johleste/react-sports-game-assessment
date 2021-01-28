@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import Swish from "./assets/sounds/Swish+2.wav";
+import Cheer from "./assets/sounds/cheer.wav";
 class Team extends Component {
     constructor(props) {
       super(props);
@@ -8,14 +10,14 @@ class Team extends Component {
       }
     }
     shoot = () => {
-      var shootSound = new Audio('./Swish+2.wav');
+      var shootSound = new Audio(Swish);
       shootSound.play();
       let score = this.state.score;
 
 
 
         if ((Math.random() * 100) + 1 > 50) {
-          var scoreSound = new Audio('.src/assets/sounds/cheer.wav');
+          var scoreSound = new Audio(Cheer);
           scoreSound.play();
           score = this.state.score + 1
         }
